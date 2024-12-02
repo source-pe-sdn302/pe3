@@ -1,11 +1,15 @@
 const mongoose = require("mongoose");
-const User = require("./user.model");
+const Movie = require("./movie");
+const Producer = require("./producer");
+const Star = require("./star");
+const Director = require("./directors");
 
-const db = {}
+const db = {};
 
+db.Movie = Movie;
+db.Producer = Producer;
+db.Star = Star;
+db.Director = Director;
 // Define schema
-db.User = User
-
-
 
 module.exports = db;
